@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FinanceAI — AI Financial Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>FinanceAI</h1>
+      <p class="tagline">AI-Powered Financial Planning & Investment Advisor</p>
+    </header>
+
+    <section class="card inputs">
+      <h2>🔑 Setup Required</h2>
+      <p>Get your Google Gemini API key from Google AI Studio and paste it below.</p>
+      <label>Enter your Gemini API Key</label>
+      <input id="apiKey" type="password" placeholder="sk-..." />
+      <div class="row">
+        <div style="flex:1;color:var(--muted);font-size:13px">No model selection required — the app will try available Gemini models in the background.</div>
+        <button id="saveKey">Save key</button>
+      </div>
+    </section>
+
+    <section class="card form">
+      <h2>📊 Your Financial Profile</h2>
+
+      <div class="grid">
+        <label>Monthly Salary ($)<input id="salary" type="number" value="5000" /></label>
+        <label>Rent/Mortgage ($)<input id="rent" type="number" value="1200" /></label>
+        <label>Utilities ($)<input id="utilities" type="number" value="150" /></label>
+        <label>Groceries ($)<input id="groceries" type="number" value="400" /></label>
+        <label>Transportation ($)<input id="transport" type="number" value="300" /></label>
+        <label>Entertainment ($)<input id="entertainment" type="number" value="200" /></label>
+        <label>Other Expenses ($)<input id="other" type="number" value="100" /></label>
+        <label>Current Savings ($)<input id="savings" type="number" value="5000" /></label>
+        <label>Age<input id="age" type="number" value="30" /></label>
+        <label>Investment Risk Tolerance
+          <select id="risk">
+            <option>Low (Conservative)</option>
+            <option selected>Moderate Risk (Balanced)</option>
+            <option>High (Aggressive)</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="results">
+        <div class="box">Total Expenses: <span id="totalExpenses">$0.00</span></div>
+        <div class="box">Disposable Income: <span id="disposable">$0.00</span></div>
+      </div>
+
+      <button id="getAI" class="primary">🚀 Get AI Recommendations</button>
+    </section>
+
+    <section class="card output">
+      <h2>💡 AI Recommendations</h2>
+      <div id="outputArea" class="ai-box">📝 Fill in your financial information and click "Get AI Recommendations".</div>
+    </section>
+
+    <footer>
+      <small>nikhil</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

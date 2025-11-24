@@ -1,0 +1,18 @@
+{
+  "name": "financeai",
+  "version": "0.1.0",
+  "description": "FinanceAI — demo app integrating Google Gemini models for financial advice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["gemini","google","finance","ai","demo"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
