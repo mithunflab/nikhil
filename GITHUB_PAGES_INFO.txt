@@ -1,0 +1,3 @@
+# GitHub Pages Configuration
+# This repository is configured to use GitHub Pages with the master branch as the source.
+# Visit: https://mithunflab.github.io/nikhil/
